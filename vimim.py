@@ -3,8 +3,12 @@ from pynput import keyboard
 from pynput.keyboard import Key, Controller
 import subprocess
 
+print('启动程序')
+
 last_esc_press_time = None
 ctl = Controller()
+
+
 
 def is_abc():
     output = subprocess.Popen(["sh", "is_abc"], stdout=subprocess.PIPE,stderr=subprocess.PIPE)
